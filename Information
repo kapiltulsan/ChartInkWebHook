@@ -1,0 +1,13 @@
+All Libraries are to be installed locally and not in venv
+
+example of install request from local code folder
+pip install requests -t .
+
+Zip the file and upload
+
+Function URL
+https://pt6hldieqvrdwcyopgxygi2zwm0diexq.lambda-url.us-east-1.on.aws/
+
+
+curl -X POST -H "Content-Type: application/json" -d '{"stocks":"SEPOWER,ASTEC,EDUCOMP,KSERASERA,IOLCP,GUJAPOLLO,EMCO","trigger_prices":"3.75,541.8,2.1,0.2,329.6,166.8,1.25","triggered_at":"2:34 pm","scan_name":"Short term breakouts","scan_url":"short-term-breakouts","alert_name":"Alert for Short term breakouts","webhook_url":"http://your-web-hook-url.com"}' https://pt6hldieqvrdwcyopgxygi2zwm0diexq.execute-api.us-east-1.amazonaws.com/your-stage
+
